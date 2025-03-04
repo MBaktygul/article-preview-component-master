@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Article preview component screenshot](images/article-preview-component-screenshot.png)
+![Article preview component screenshot](/assets/images/article-preview-component-screenshot.png)
 
 ### Links
 

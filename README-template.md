@@ -12,10 +12,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-      - [HTML:](#html)
-      - [CSS:](#css)
-    - [Useful resource](#useful-resource)
   - [Author](#author)
   
 
@@ -31,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Article preview component screenshot](./images/article-preview-component-screenshot.png)
+![Article preview component screenshot](images/article-preview-component-screenshot.png)
 
 ### Links
 
-  - Solution URL: [HTML](https://github.com/MBaktygul/nft-preview-card-component-main/blob/main/index.html), [CSS](https://github.com/MBaktygul/nft-preview-card-component-main/blob/main/styles/main.css)
-- Live Site URL: [NFT card component](https://mbaktygul.github.io/nft-preview-card-component-main/)
+- Solution URL: [HTML](https://github.com/MBaktygul/article-preview-component-master/blob/main/index.html), [CSS](https://github.com/MBaktygul/article-preview-component-master/blob/main/styles/main.css)
+- Live Site URL: [Article preview component](https://mbaktygul.github.io/article-preview-component-master/)
 
 ## My process
 
@@ -45,22 +41,8 @@ Users should be able to:
 - Semantic HTML5 markup
 - Scss
 - Flexbox
+- JavaScript
 - Mobile-first workflow
-
-### What I learned
-
-#### HTML:
-An image ```img``` is wrapped in a div ```.img__wrapper``` with an overlay div ```.img-overlay``` that contains an eye icon (SVG).
-
-#### CSS:
-The wrapper is ```position: relative;```, and the overlay is ```position: absolute;``` to cover the image fully.
-The overlay starts invisible ```opacity: 0;``` and becomes visible on hover ```opacity: 1;```.
-
-The icon is centered using ```flexbox```.
-
-### Useful resource
-
-- [Opacity with Box (W3Schools) ](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity) - This helped me with an overlay.
 
 ## Author
 

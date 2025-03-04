@@ -68,8 +68,8 @@ a {
 img,
 picture,
 i {
-  max-width: 100%;
-  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -154,6 +154,7 @@ p {
 
 .card__image-wrapper {
   width: 100%;
+  height: 100%;
 }
 
 .card__image {
@@ -175,16 +176,34 @@ p {
   margin: 30px;
 }
 
+.footer__wrapper {
+  height: 60px;
+}
+
+.card__footer {
+  margin: 0 30px;
+  height: 100%;
+}
+
+.card__footer.visible {
+  margin: 0 30px;
+  height: 100%;
+}
+
+.card__footer.hidden {
+  display: none;
+}
+
 .card__footer-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 13px;
 }
 
 .card__footer-context {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  height: 60px;
 }
 
 .card__footer-image {
@@ -198,12 +217,14 @@ p {
   font-weight: 700;
 }
 
-.icon-share {
+.share-button {
+  left: 260px;
   cursor: pointer;
   background-color: hsl(210, 46%, 95%);
   color: hsl(214, 17%, 51%);
   border-radius: 50%;
-  padding: 10px;
+  height: 30px;
+  width: 30px;
 }
 
 .attribution {
@@ -218,6 +239,53 @@ p {
 
 .attribution a:hover {
   color: hsl(217, 19%, 35%);
+}
+
+.hidden-info {
+  display: none;
+}
+
+.hidden-info.visible {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  gap: 20px;
+  width: 100%;
+  background-color: hsl(217, 19%, 35%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+}
+.hidden-info.visible > button {
+  background-color: hsl(212, 23%, 69%);
+  color: hsl(0, 0%, 100%);
+}
+@media (min-width: 768px) {
+  .hidden-info.visible {
+    position: absolute;
+    justify-content: center;
+    padding: 0;
+    height: 50px;
+    width: 220px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    right: -65px;
+    bottom: 80px;
+  }
+  .hidden-info.visible > button {
+    display: none;
+  }
+  .hidden-info.visible::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+  }
 }
 
 .flex {
@@ -237,6 +305,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .sr-only {
